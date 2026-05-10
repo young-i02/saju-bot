@@ -7,7 +7,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-INSTA_ID = os.getenv("INSTA_ID", "@내인스타계정")
+THREADS_ID = "@사주포커스"
+INSTA_ID = os.getenv("INSTA_ID", "")
 BANK_NAME = os.getenv("BANK_NAME", "은행명")
 BANK_ACCOUNT = os.getenv("BANK_ACCOUNT", "계좌번호")
 BANK_HOLDER = os.getenv("BANK_HOLDER", "예금주명")
@@ -387,7 +388,7 @@ def create_instagram_card(name, 띠, gender, 성향, 운세, 재물):
 
 # ─── UI ───────────────────────────────────────────────────────────────────────
 
-st.set_page_config(page_title="사주 운세 | 내 운명을 알아보세요", page_icon="🔮", layout="centered")
+st.set_page_config(page_title="사주포커스 | 지금 내 운을 막는 것들", page_icon="🔮", layout="centered")
 
 st.markdown("""
 <style>
@@ -516,7 +517,7 @@ hr { border-color: #2a2a45 !important; }
 # 히어로 섹션
 st.markdown("""
 <div class="hero">
-    <div class="hero-tag">✦ 지금 확인하세요 ✦</div>
+    <div class="hero-tag">✦ SAJUFOCUS · 사주포커스 ✦</div>
     <h1 class="hero-title">지금 내 운을<br><span>막고 있는 것들</span></h1>
     <p class="hero-sub">사주가 말하는 내 기운의 구멍 —<br>알면 막을 수 있고, 모르면 계속 샙니다</p>
     <div class="hero-badges">
@@ -613,7 +614,7 @@ if submitted:
 
     # ── 유료 운세 ──────────────────────────────────────────────────────────────
     st.markdown("### 🔒 프리미엄 운세")
-    st.caption("결제 후 인스타 DM으로 영수증 스크린샷 전송 → 상세 결과 전달")
+    st.caption("결제 후 스레드 DM으로 영수증 스크린샷 전송 → 상세 결과 전달 | 스레드: @사주포커스")
 
     for item in 유료_항목:
         with st.container(border=True):
@@ -646,4 +647,14 @@ if submitted:
                     st.markdown(f"🏦 **{BANK_NAME}**")
                     st.code(BANK_ACCOUNT, language=None)
                     st.caption(f"예금주: {BANK_HOLDER}")
-                    st.warning("입금 후 인스타 DM으로 영수증 전송해주세요 📩")
+                    st.warning("입금 후 스레드 DM으로 영수증 전송해주세요 📩  스레드: @사주포커스")
+
+st.divider()
+st.markdown("""
+<div style="text-align:center; padding: 24px 0 8px; color:#6060a0; font-size:0.85rem;">
+    <div style="font-size:1rem; font-weight:700; color:#a78bfa; margin-bottom:8px;">🔮 SAJUFOCUS · 사주포커스</div>
+    <a href="https://www.threads.net/@사주포커스" target="_blank"
+       style="color:#a78bfa; text-decoration:none; font-weight:600;">스레드 @사주포커스</a>
+    &nbsp;·&nbsp; 문의 및 결제는 스레드 DM으로
+</div>
+""", unsafe_allow_html=True)
