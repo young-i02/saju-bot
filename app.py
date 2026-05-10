@@ -131,6 +131,14 @@ BANK_HOLDER = os.getenv("BANK_HOLDER", "예금주명")
 
 유료_항목 = [
     {
+        "name": "🛡️ 나쁜 기운 차단법",
+        "emoji": "🛡️",
+        "price": 990,
+        "desc": "지금 내 사주에서 운을 막고 있는 것 + 막는 방법 1회 분석 | 생년월일 DM 전송 → 48시간 내 답변 | ✓ 월구독 시 매달 업데이트 제공",
+        "teaser": "당신의 사주에서 지금 가장 강하게 운을 막고 있는 기운은 ○○입니다. 이걸 알고 대처하면...",
+        "badge": "990원",
+    },
+    {
         "name": "월운세 정기구독 (매월 1일)",
         "emoji": "📅",
         "price": 990,
@@ -508,13 +516,35 @@ hr { border-color: #2a2a45 !important; }
 # 히어로 섹션
 st.markdown("""
 <div class="hero">
-    <div class="hero-tag">✦ 무료 사주 분석 ✦</div>
-    <h1 class="hero-title">생년월일로 보는<br><span>나의 운명</span></h1>
-    <p class="hero-sub">기질 · 재물 · 연애 · 커리어 · 건강까지<br>사주 하나로 내 인생의 흐름을 읽어드립니다</p>
+    <div class="hero-tag">✦ 지금 확인하세요 ✦</div>
+    <h1 class="hero-title">지금 내 운을<br><span>막고 있는 것들</span></h1>
+    <p class="hero-sub">사주가 말하는 내 기운의 구멍 —<br>알면 막을 수 있고, 모르면 계속 샙니다</p>
     <div class="hero-badges">
         <span class="badge">🔮 기본 운세 무료</span>
-        <span class="badge">⚡ 바로 확인</span>
-        <span class="badge">🔒 프리미엄 상세 분석</span>
+        <span class="badge">🛡️ 차단법 990원</span>
+        <span class="badge">🔄 월구독 4,900원</span>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+# 990원 차단법 배너
+st.markdown("""
+<div style="
+    background: linear-gradient(135deg, #2d1b4e 0%, #1a1040 100%);
+    border: 1.5px solid #7c3aed;
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+">
+    <div style="font-size:2.2rem;">🛡️</div>
+    <div style="flex:1;">
+        <div style="color:#a78bfa; font-size:0.78rem; font-weight:700; letter-spacing:0.1em; margin-bottom:4px;">지금 가장 많이 찾는 서비스</div>
+        <div style="color:#ffffff; font-size:1.15rem; font-weight:800; margin-bottom:4px;">나쁜 기운 차단법 — <span style="color:#a78bfa;">990원</span></div>
+        <div style="color:#9090b0; font-size:0.85rem;">내 사주에서 지금 나를 막고 있는 것 + 막는 방법을 DM으로 알려드립니다<br>
+        <span style="color:#7c3aed; font-weight:600;">✓ 월구독 시 매달 업데이트 포함</span></div>
     </div>
 </div>
 """, unsafe_allow_html=True)
@@ -593,6 +623,7 @@ if submitted:
                     " 🏆 BEST" if item["badge"] == "BEST"
                     else " 💑 커플추천" if item["badge"] == "커플추천"
                     else " 🔄 정기구독" if item["badge"] == "정기구독"
+                    else " 🔥 인기" if item["badge"] == "990원"
                     else ""
                 )
                 st.markdown(f"**{item['emoji']} {item['name']}**{badge}")
