@@ -518,8 +518,8 @@ hr { border-color: #2a2a45 !important; }
 st.markdown("""
 <div class="hero">
     <div class="hero-tag">✦ SAJUFOCUS · 사주포커스 ✦</div>
-    <h1 class="hero-title">지금 내 운을<br><span>막고 있는 것들</span></h1>
-    <p class="hero-sub">사주가 말하는 내 기운의 구멍 —<br>알면 막을 수 있고, 모르면 계속 샙니다</p>
+    <h1 class="hero-title">지금 내 기운<br><span>새고 있지 않나요?</span></h1>
+    <p class="hero-sub">사주가 말하는 내 운의 구멍 —<br>알면 막을 수 있고, 모르면 계속 샙니다</p>
     <div class="hero-badges">
         <span class="badge">🔮 기본 운세 무료</span>
         <span class="badge">🛡️ 차단법 990원</span>
