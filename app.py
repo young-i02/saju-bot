@@ -130,160 +130,64 @@ BANK_HOLDER = os.getenv("BANK_HOLDER", "예금주명")
     "돼지띠": "재물운이 좋아 보이지만 함정이 있습니다. 돈이 들어오는 시기에 오히려 큰 지출이 생기는 구조예요. 좋은 투자처럼 보이는 것에 속지 마세요.",
 }
 
-유료_항목 = [
-    {
-        "name": "🛡️ 나쁜 기운 차단법",
-        "emoji": "🛡️",
-        "price": 990,
-        "desc": "지금 내 사주에서 운을 막고 있는 것 + 막는 방법 1회 분석 | 생년월일 DM 전송 → 48시간 내 답변 | ✓ 월구독 시 매달 업데이트 제공",
-        "teaser": "당신의 사주에서 지금 가장 강하게 운을 막고 있는 기운은 ○○입니다. 이걸 알고 대처하면...",
-        "badge": "990원",
-    },
-    {
-        "name": "월운세 정기구독 (매월 1일)",
-        "emoji": "📅",
-        "price": 990,
-        "desc": "첫 달 990원 → 이후 매월 4,900원 | 매월 1일 월운세 상세 분석 | 🌡️ 오늘 내 운의 온도 매일 확인 | 🧧 구독 첫 달 부적 이미지 1회 증정 | 언제든 해지 가능",
-        "teaser": "구독하시면 매월 1일 월운세 + 매일 내 운의 온도를 확인할 수 있어요. 첫 달엔 부적 이미지도 함께 드립니다...",
-        "badge": "정기구독",
-    },
-    {
-        "name": "종합 사주 풀이",
-        "emoji": "🌟",
-        "price": 35000,
-        "desc": "아래 모든 항목을 한번에 — 기질·대운·재물·애정·건강 전체 분석",
-        "teaser": "당신의 사주 전체 흐름과 지금 이 시기가 의미하는 것은...",
-        "badge": "BEST",
-    },
-    {
-        "name": "2인 종합 사주",
-        "emoji": "👫",
-        "price": 60000,
-        "desc": "두 사람의 사주를 함께 분석 — 각자의 운세 + 두 사람의 궁합까지 한번에 (커플·부부·동업자)",
-        "teaser": "두 사람의 사주를 함께 보면 보이지 않던 것들이 보입니다...",
-        "badge": "커플추천",
-    },
-    {
-        "name": "궁합 분석",
-        "emoji": "🤝",
-        "price": 18900,
-        "desc": "친구 / 직장동료 / 동업자 / 부모자식 — 원하는 관계를 선택해서 궁합 분석",
-        "teaser": "상대방의 생년월일을 함께 보내주시면 두 사람 사이의 궁합을...",
-        "badge": "",
-    },
-    {
-        "name": "타고난 기질",
-        "emoji": "✨",
-        "price": 9900,
-        "desc": "사주로 보는 진짜 내 성격, 타고난 강점과 약점, 에너지 유형 분석",
-        "teaser": "당신의 사주 원국에서 가장 강한 기운은 ○○이며...",
-        "badge": "",
-    },
-    {
-        "name": "대운 분석",
-        "emoji": "🌊",
-        "price": 9900,
-        "desc": "10년 단위 대운의 흐름, 현재 대운이 내 삶에 미치는 영향 상세 분석",
-        "teaser": "현재 당신은 ○○대운의 흐름 위에 있습니다. 이 시기는...",
-        "badge": "",
-    },
-    {
-        "name": "세운 (올해 상세)",
-        "emoji": "📆",
-        "price": 9900,
-        "desc": "2026년 세운이 내 사주와 어떻게 작용하는지, 월별 흐름 포함 상세 분석",
-        "teaser": "2026년 세운은 당신의 사주에서 ○○의 역할을 합니다...",
-        "badge": "",
-    },
-    {
-        "name": "인생 흐름",
-        "emoji": "🔮",
-        "price": 9900,
-        "desc": "과거·현재·미래의 큰 흐름, 인생 전환점과 중요한 결정 시기 분석",
-        "teaser": "당신의 인생은 ○○대에 가장 큰 변화를 겪으며...",
-        "badge": "",
-    },
-    {
-        "name": "재물운 상세",
-        "emoji": "💰",
-        "price": 9900,
-        "desc": "타고난 재물 그릇, 돈이 들어오는 방식, 재물운이 좋은 시기 상세 분석",
-        "teaser": "당신의 재물 그릇은 ○○형이며, 돈이 들어오는 통로는...",
-        "badge": "",
-    },
-    {
-        "name": "적성 · 직업운",
-        "emoji": "💼",
-        "price": 9900,
-        "desc": "타고난 직업 적성, 잘 맞는 직종, 커리어 방향이 맞는지 분석",
-        "teaser": "당신의 사주에서 가장 빛나는 직업 기질은 ○○이며...",
-        "badge": "",
-    },
-    {
-        "name": "애정 · 연애운",
-        "emoji": "💕",
-        "price": 9900,
-        "desc": "타고난 연애 패턴, 이상형 유형, 2026년 만남의 시기 분석",
-        "teaser": "당신의 연애 기질은 ○○형입니다. 2026년 애정운은...",
-        "badge": "",
-    },
-    {
-        "name": "결혼운",
-        "emoji": "💍",
-        "price": 9900,
-        "desc": "결혼 시기, 배우자 인연의 특징, 결혼 후 운의 변화 분석",
-        "teaser": "당신의 배우자 인연은 ○○한 기운을 가진 사람이며...",
-        "badge": "",
-    },
-    {
-        "name": "임신운",
-        "emoji": "🤱",
-        "price": 9900,
-        "desc": "자녀 인연, 임신 가능 시기, 자녀운의 흐름 분석",
-        "teaser": "당신의 사주에서 자녀 인연은 ○○년 전후에 가장 강하게...",
-        "badge": "",
-    },
-    {
-        "name": "이직운",
-        "emoji": "🚀",
-        "price": 9900,
-        "desc": "이직·창업에 유리한 시기, 지금 움직여도 되는지 사주로 판단",
-        "teaser": "지금 이직을 고민 중이라면, 사주상 가장 유리한 시기는...",
-        "badge": "",
-    },
-    {
-        "name": "고난 · 변화운",
-        "emoji": "⚡",
-        "price": 9900,
-        "desc": "힘든 시기는 언제인지, 어떻게 대비해야 하는지, 변화가 오는 시기 분석",
-        "teaser": "당신의 사주에서 조심해야 할 시기는 ○○이며...",
-        "badge": "",
-    },
-    {
-        "name": "건강운",
-        "emoji": "🌿",
-        "price": 9900,
-        "desc": "사주로 보는 타고난 건강 약점, 조심해야 할 시기, 건강 관리 방향",
-        "teaser": "당신의 사주에서 건강상 주의해야 할 부분은 ○○이며...",
-        "badge": "",
-    },
-    {
-        "name": "재회운",
-        "emoji": "🕊️",
-        "price": 9900,
-        "desc": "헤어진 연인과의 재회 가능성, 시기, 다시 만나도 되는지 사주로 분석",
-        "teaser": "두 사람의 인연이 끊어진 것인지 이어진 것인지, 사주는 알고 있습니다...",
-        "badge": "",
-    },
-    {
-        "name": "고민 1가지 집중 상담",
-        "emoji": "💬",
-        "price": 9900,
-        "desc": "지금 가장 큰 고민 1가지를 사주로 집중 분석 — 연애·직장·가족·결정장애 모두 가능",
-        "teaser": "DM으로 고민 내용 1가지를 보내주시면 사주 관점에서 집중 분석해드립니다...",
-        "badge": "",
-    },
-]
+프리미엄_탭 = {
+    "✨ 내 사주": [
+        {"name": "타고난 기질", "emoji": "✨", "price": 9900,
+         "desc": "사주로 보는 진짜 내 성격, 타고난 강점과 약점, 에너지 유형 분석",
+         "teaser": "당신의 사주 원국에서 가장 강한 기운은 ○○입니다. 이 기운이 당신의 말투, 결정 방식, 대인관계 패턴까지 전부 설명해요. 왜 나는 이런 사람인지 — 사주가 정확하게 말해줍니다."},
+        {"name": "대운 분석", "emoji": "🌊", "price": 9900,
+         "desc": "10년 단위 대운의 흐름, 현재 대운이 내 삶에 미치는 영향 상세 분석",
+         "teaser": "지금 당신은 어떤 대운 위에 서 있을까요? 현재 대운이 ○○한 기운이라면, 지금 안 되는 것들이 왜 안 되는지 바로 이해됩니다. 언제 터닝포인트가 오는지도 함께 알려드려요."},
+        {"name": "세운 (올해 상세)", "emoji": "📆", "price": 9900,
+         "desc": "2026년 세운이 내 사주와 어떻게 작용하는지, 월별 흐름 포함 상세 분석",
+         "teaser": "2026년이 유독 이상하게 느껴진다면 이유가 있습니다. 세운이 당신의 사주와 충돌하는 시기가 있어요. 어느 달에 조심하고 어느 달에 밀어붙여야 하는지 월별로 알려드립니다."},
+        {"name": "인생 흐름", "emoji": "🔮", "price": 9900,
+         "desc": "과거·현재·미래의 큰 흐름, 인생 전환점과 중요한 결정 시기 분석",
+         "teaser": "당신의 인생에서 가장 큰 변화가 오는 시기는 ○○대입니다. 지금 이 시점이 그 흐름의 어디쯤인지 — 알면 덜 불안하고, 더 잘 준비할 수 있어요."},
+    ],
+    "💰 재물·커리어": [
+        {"name": "재물운 상세", "emoji": "💰", "price": 9900,
+         "desc": "타고난 재물 그릇, 돈이 들어오는 방식, 재물운이 좋은 시기 상세 분석",
+         "teaser": "당신의 재물 그릇은 ○○형입니다. 이 유형은 특정 방식으로 돈을 벌 때 훨씬 잘 흘러들어와요. 지금 하고 있는 방식이 맞는지, 언제 재물운이 열리는지 알려드립니다."},
+        {"name": "적성·직업운", "emoji": "💼", "price": 9900,
+         "desc": "타고난 직업 적성, 잘 맞는 직종, 커리어 방향이 맞는지 분석",
+         "teaser": "당신의 사주에서 가장 빛나는 직업 기질은 ○○입니다. 지금 하는 일이 사주와 맞는지, 왜 이 일이 유독 힘들게 느껴지는지 — 커리어 방향을 사주로 점검해드려요."},
+        {"name": "이직운", "emoji": "🚀", "price": 9900,
+         "desc": "이직·창업에 유리한 시기, 지금 움직여도 되는지 사주로 판단",
+         "teaser": "지금 이직하면 잘 될까요, 아니면 더 기다려야 할까요? 사주상 가장 유리한 이동 시기는 ○○월 전후입니다. 잘못된 타이밍의 이직이 3년을 망칠 수 있어요."},
+    ],
+    "💕 연애·관계": [
+        {"name": "애정·연애운", "emoji": "💕", "price": 9900,
+         "desc": "타고난 연애 패턴, 이상형 유형, 2026년 만남의 시기 분석",
+         "teaser": "당신의 연애 기질은 ○○형입니다. 이 유형은 특정 패턴으로 상처받고, 특정 유형에게 끌리는 경향이 있어요. 2026년 인연운이 열리는 시기와 어떤 사람을 만나야 하는지 알려드립니다."},
+        {"name": "결혼운", "emoji": "💍", "price": 9900,
+         "desc": "결혼 시기, 배우자 인연의 특징, 결혼 후 운의 변화 분석",
+         "teaser": "당신의 배우자 인연은 ○○한 기운을 가진 사람일 가능성이 높습니다. 결혼 시기가 사주상 언제인지, 지금 만나는 사람이 그 인연인지 — 사주가 힌트를 줍니다."},
+        {"name": "궁합 분석", "emoji": "🤝", "price": 18900,
+         "desc": "연인·친구·직장동료 등 원하는 관계의 두 사람 궁합 상세 분석",
+         "teaser": "두 사람의 사주를 함께 놓으면, 말로는 설명하기 힘들었던 그 관계가 보입니다. 왜 맞는 것 같은데 자꾸 부딪히는지, 왜 편한데 불안한지 — 사주가 정확하게 설명해줍니다."},
+        {"name": "2인 종합 사주", "emoji": "👫", "price": 60000,
+         "desc": "두 사람 각자 사주 풀이 + 궁합까지 한번에 (커플·부부·동업자)",
+         "teaser": "각자의 사주를 먼저 보고, 두 사람이 만났을 때 어떤 시너지와 충돌이 생기는지까지 분석합니다. 함께 가도 되는 사람인지 — 사주가 가장 솔직하게 말해줍니다."},
+        {"name": "재회운", "emoji": "🕊️", "price": 9900,
+         "desc": "헤어진 연인과의 재회 가능성, 시기, 다시 만나도 되는지 사주로 분석",
+         "teaser": "두 사람의 인연이 끊어진 것인지 이어진 것인지, 사주는 알고 있습니다. 재회 가능성이 있는 시기는 ○○이며, 다시 만났을 때 이전과 같은 패턴이 반복될지도 미리 볼 수 있어요."},
+    ],
+    "🌱 특별·건강": [
+        {"name": "임신운", "emoji": "🤱", "price": 9900,
+         "desc": "자녀 인연, 임신 가능 시기, 자녀운의 흐름 분석",
+         "teaser": "당신의 사주에서 자녀 인연이 가장 강하게 들어오는 시기는 ○○년 전후입니다. 자녀와의 인연이 있는지, 어떤 방식으로 찾아오는지 — 준비가 되어 있을 때 기회를 놓치지 않을 수 있어요."},
+        {"name": "건강운", "emoji": "🌿", "price": 9900,
+         "desc": "사주로 보는 타고난 건강 약점, 조심해야 할 시기, 건강 관리 방향",
+         "teaser": "당신의 사주에서 건강상 가장 취약한 부분은 ○○입니다. 특히 조심해야 할 시기가 있으며, 미리 알고 관리하면 큰 문제를 예방할 수 있어요."},
+        {"name": "고난·변화운", "emoji": "⚡", "price": 9900,
+         "desc": "힘든 시기는 언제인지, 어떻게 대비해야 하는지, 변화가 오는 시기 분석",
+         "teaser": "당신의 사주에서 가장 힘든 시기는 ○○이며, 이 시기엔 특정 유형의 고난이 반복됩니다. 알고 지나가는 것과 모르고 지나가는 것은 완전히 달라요."},
+        {"name": "고민 1가지 집중 상담", "emoji": "💬", "price": 9900,
+         "desc": "지금 가장 큰 고민 1가지를 사주로 집중 분석 — 연애·직장·가족·결정장애 모두 가능",
+         "teaser": "지금 머릿속을 가장 많이 차지하는 고민이 뭔가요? DM으로 고민 내용 1가지를 보내주시면 그 상황을 사주 관점에서 집중 분석해드립니다. 결정이 흔들릴 때, 사주가 방향을 잡아줘요."},
+    ],
+}
 
 
 위험신호 = {
@@ -519,7 +423,7 @@ st.markdown("""
     <p class="hero-sub">억울하면 사주나 봐봐 — 진짜 이유 알려줌 😤<br>내 인생이 왜 이런지, 사주가 다 설명해줌</p>
     <div class="hero-badges">
         <span class="badge">🔮 기본 운세 무료</span>
-        <span class="badge">🛡️ 차단법 990원</span>
+        <span class="badge">🛡️ 부적 이미지 990원</span>
         <span class="badge">🔄 월구독 4,900원</span>
     </div>
 </div>
@@ -540,9 +444,10 @@ st.markdown("""
     <div style="font-size:2.2rem;">🛡️</div>
     <div style="flex:1;">
         <div style="color:#7c3aed; font-size:0.78rem; font-weight:700; letter-spacing:0.1em; margin-bottom:4px;">지금 가장 많이 찾는 서비스</div>
-        <div style="color:#1e1e2e; font-size:1.15rem; font-weight:800; margin-bottom:4px;">나쁜 기운 차단법 — <span style="color:#7c3aed;">990원</span></div>
-        <div style="color:#6b6b8a; font-size:0.85rem;">내 사주에서 지금 나를 막고 있는 것 + 막는 방법을 DM으로 알려드립니다<br>
-        <span style="color:#7c3aed; font-weight:600;">✓ 월구독 시 매달 업데이트 포함</span></div>
+        <div style="color:#1e1e2e; font-size:1.15rem; font-weight:800; margin-bottom:4px;">나쁜 기운 소멸 부적 이미지 — <span style="color:#7c3aed;">990원</span></div>
+        <div style="color:#6b6b8a; font-size:0.85rem;">내 사주에서 지금 나를 막고 있는 기운에 맞춘 부적 이미지를 DM으로 발송해드립니다<br>
+        지갑·휴대폰·배경화면에 저장하는 것만으로 기운을 차단할 수 있어요<br>
+        <span style="color:#7c3aed; font-weight:600;">✓ 월구독 시 매달 새 부적 이미지 업데이트 포함</span></div>
     </div>
 </div>
 """, unsafe_allow_html=True)
@@ -622,49 +527,89 @@ if submitted:
     <div style="color:#9a3412; font-weight:700; margin-bottom:6px;">🔴 {신호_제목}</div>
     <div style="color:#7c2d12; font-size:0.92rem; line-height:1.6;">{신호_내용}</div>
     <div style="margin-top:12px; color:#ea580c; font-size:0.85rem; font-weight:600;">
-        👇 이 위험을 어떻게 피해야 하는지, 정확한 시기와 대처법은 유료 분석에서 알려드립니다
+        👇 이 위험을 어떻게 피해야 하는지, 정확한 시기와 대처법은 프리미엄 분석에서 알려드립니다
     </div>
 </div>
 """, unsafe_allow_html=True)
 
     st.divider()
 
-    # ── 유료 운세 ──────────────────────────────────────────────────────────────
+    # ── 프리미엄 운세 ──────────────────────────────────────────────────────────────
     st.markdown("### 🔒 프리미엄 운세")
-    st.caption("결제 후 스레드 DM으로 영수증 스크린샷 전송 → 상세 결과 전달 | 스레드: @사주포커스")
+    st.caption("결제 후 스레드 DM으로 영수증 스크린샷 전송 → 상세 결과 전달  |  스레드: @사주포커스")
 
-    for item in 유료_항목:
-        with st.container(border=True):
-            col_a, col_b = st.columns([3, 1])
-            with col_a:
-                badge = (
-                    " 🏆 BEST" if item["badge"] == "BEST"
-                    else " 💑 커플추천" if item["badge"] == "커플추천"
-                    else " 🔄 정기구독" if item["badge"] == "정기구독"
-                    else " 🔥 인기" if item["badge"] == "990원"
-                    else ""
-                )
-                st.markdown(f"**{item['emoji']} {item['name']}**{badge}")
-                st.caption(item["desc"])
-                st.markdown(f"> 🔒 *{item['teaser']}*")
-            with col_b:
-                if item["badge"] == "정기구독":
-                    st.markdown("**첫 달 990원**")
-                    st.caption("이후 4,900원/월")
-                else:
-                    st.markdown(f"**{item['price']:,}원**")
-                with st.popover("💳 결제하기", use_container_width=True):
-                    if item["badge"] == "정기구독":
-                        st.markdown(f"**{item['name']}**")
-                        st.markdown("🎁 **첫 달 990원** → 이후 매월 4,900원")
-                        st.caption("🧧 구독 첫 달 부적 이미지 1회 증정")
-                    else:
-                        st.markdown(f"**{item['name']}** — {item['price']:,}원")
-                    st.divider()
-                    st.markdown(f"🏦 **{BANK_NAME}**")
-                    st.code(BANK_ACCOUNT, language=None)
-                    st.caption(f"예금주: {BANK_HOLDER}")
-                    st.warning("입금 후 스레드 DM으로 영수증 전송해주세요 📩  스레드: @사주포커스")
+    # 주요 추천 서비스 3종
+    col_f1, col_f2, col_f3 = st.columns(3)
+    with col_f1:
+        st.markdown("""<div style="background:#fff8f0;border:1.5px solid #f97316;border-radius:12px;padding:16px;text-align:center;min-height:130px;">
+            <div style="font-size:1.8rem;">🛡️</div>
+            <div style="font-weight:800;color:#ea580c;font-size:0.88rem;margin:6px 0;">나쁜 기운 소멸<br>부적 이미지</div>
+            <div style="font-size:1.2rem;font-weight:900;color:#ea580c;">990원</div>
+        </div>""", unsafe_allow_html=True)
+    with col_f2:
+        st.markdown("""<div style="background:#f5f3ff;border:1.5px solid #7c3aed;border-radius:12px;padding:16px;text-align:center;min-height:130px;">
+            <div style="font-size:1.8rem;">🔄</div>
+            <div style="font-weight:800;color:#7c3aed;font-size:0.88rem;margin:6px 0;">월간 운세 구독</div>
+            <div style="color:#6b6b8a;font-size:0.78rem;margin-bottom:4px;">이후 4,900원/월</div>
+            <div style="font-size:1.2rem;font-weight:900;color:#7c3aed;">첫달 990원</div>
+        </div>""", unsafe_allow_html=True)
+    with col_f3:
+        st.markdown("""<div style="background:#f5f3ff;border:1.5px solid #4f46e5;border-radius:12px;padding:16px;text-align:center;min-height:130px;">
+            <div style="font-size:1.8rem;">📖</div>
+            <div style="font-weight:800;color:#1e1e2e;font-size:0.88rem;margin:6px 0;">종합 사주 풀이</div>
+            <div style="color:#6b6b8a;font-size:0.78rem;margin-bottom:4px;">대운+세운+전체분석</div>
+            <div style="font-size:1.2rem;font-weight:900;color:#4f46e5;">35,000원</div>
+        </div>""", unsafe_allow_html=True)
+
+    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown("#### 더 자세히 보고 싶은 항목을 골라보세요")
+
+    탭_레이블 = list(프리미엄_탭.keys())
+    탭_목록 = st.tabs(탭_레이블)
+
+    for 탭, 레이블 in zip(탭_목록, 탭_레이블):
+        with 탭:
+            for item in 프리미엄_탭[레이블]:
+                with st.container(border=True):
+                    col_a, col_b = st.columns([5, 1])
+                    with col_a:
+                        st.markdown(f"**{item['emoji']} {item['name']}**")
+                        st.caption(item["desc"])
+                        st.markdown(f"> 🔒 *{item['teaser']}*")
+                    with col_b:
+                        st.markdown(f"**{item['price']:,}원**")
+
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    # 단일 결제 CTA
+    st.markdown(f"""
+<div style="
+    background: linear-gradient(135deg, #1e1e2e 0%, #2d1b69 100%);
+    border-radius: 20px;
+    padding: 32px 28px;
+    margin-top: 8px;
+    text-align: center;
+">
+    <div style="color:#a78bfa; font-size:0.8rem; letter-spacing:0.15em; font-weight:700; margin-bottom:10px;">💳 결제 안내</div>
+    <div style="color:#ffffff; font-size:1.05rem; font-weight:800; margin-bottom:6px;">
+        원하는 항목 확인 후 아래 계좌로 입금해주세요
+    </div>
+    <div style="color:#c4b5fd; font-size:0.88rem; margin-bottom:20px;">
+        영수증 스크린샷 + 원하는 항목명을 DM으로 보내주시면 바로 전달해드립니다
+    </div>
+    <div style="background:rgba(255,255,255,0.1); border-radius:12px; padding:18px 24px; margin-bottom:20px; display:inline-block; min-width:260px;">
+        <div style="color:#a78bfa; font-size:0.82rem; margin-bottom:8px;">입금 계좌</div>
+        <div style="color:#ffffff; font-size:1.15rem; font-weight:800;">{BANK_NAME}</div>
+        <div style="color:#e0e7ff; font-size:1.1rem; font-family:monospace; margin:6px 0;">{BANK_ACCOUNT}</div>
+        <div style="color:#a78bfa; font-size:0.85rem;">예금주: {BANK_HOLDER}</div>
+    </div>
+    <div style="color:#c4b5fd; font-size:0.88rem;">
+        📩 입금 후 스레드 DM 전송 →
+        <a href="https://www.threads.net/@사주포커스" target="_blank"
+           style="color:#a78bfa; font-weight:700; text-decoration:none;">@사주포커스</a>
+    </div>
+</div>
+""", unsafe_allow_html=True)
 
 st.divider()
 st.markdown("""
