@@ -419,8 +419,8 @@ hr { border-color: #e5e7eb !important; }
 st.markdown("""
 <div class="hero">
     <div class="hero-tag">✦ SAJUFOCUS · 사주포커스 ✦</div>
-    <h1 class="hero-title">"팀장님이 제 귀인이라고요?<br><span>제 퇴사 사유인데요?"</span></h1>
-    <p class="hero-sub">억울하면 사주나 봐봐 — 진짜 이유 알려줌 😤<br>내 인생이 왜 이런지, 사주가 다 설명해줌</p>
+    <h1 class="hero-title">나 진짜 열심히 하는데<br><span>왜 나만 이렇게 안 풀리지?</span></h1>
+    <p class="hero-sub">우연이 아니에요 — 사주에 다 이유 있었음 😮‍💨<br>내 인생이 왜 이런지, 사주가 정확하게 설명해줍니다</p>
     <div class="hero-badges">
         <span class="badge">🔮 기본 운세 무료</span>
         <span class="badge">🛡️ 부적 이미지 990원</span>
