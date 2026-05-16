@@ -101,33 +101,33 @@ BANK_HOLDER = os.getenv("BANK_HOLDER", "예금주명")
 }
 
 올해_운세 = {
-    "쥐띠": "2026년 쥐띠는 새로운 도전과 기회의 해입니다. 상반기에는 인간관계에서 좋은 인연이 찾아오며 하반기에는 그동안 준비해온 일들이 결실을 맺기 시작합니다. 재물운은 안정적이며 노력한 만큼 돌아오는 해입니다.",
-    "소띠": "2026년 소띠는 묵묵히 쌓아온 노력이 빛을 발하는 해입니다. 직장과 사업에서 안정적인 성장이 이어지며 주변의 신뢰가 높아집니다. 상반기 중요한 결정이 하반기 성과로 이어집니다.",
-    "호랑이띠": "2026년 호랑이띠는 강한 에너지로 목표를 향해 돌진하는 해입니다. 새로운 분야에 도전하면 좋은 결과를 얻을 수 있으며 리더십을 발휘할 기회가 많아집니다.",
-    "토끼띠": "2026년 토끼띠는 조화롭고 안정적인 한 해입니다. 인간관계에서 귀인이 나타나고 오래 고민하던 문제들이 자연스럽게 해결됩니다.",
-    "용띠": "2026년 용띠는 큰 그림을 그리고 실행하는 해입니다. 강한 카리스마로 주변을 이끌며 중요한 프로젝트에서 두각을 나타냅니다. 하반기에 특히 큰 기회가 찾아옵니다.",
-    "뱀띠": "2026년 뱀띠는 직관과 지혜로 중요한 결정을 내리는 해입니다. 조용히 준비해온 것들이 드디어 수면 위로 떠오르며 결실을 맺는 시기입니다.",
-    "말띠": "2026년 말띠는 활발한 활동과 도전의 해입니다. 새로운 환경이나 인연이 찾아오며 변화를 두려워하지 않을 때 더 큰 기회가 열립니다.",
-    "양띠": "2026년 양띠는 창의성과 감수성이 빛나는 해입니다. 예술적 감각이나 창의적 아이디어로 새로운 기회를 만들 수 있으며 인간관계에서 따뜻한 인연이 더해집니다.",
-    "원숭이띠": "2026년 원숭이띠는 다양한 가능성을 탐색하는 해입니다. 새로운 분야에 관심을 가지면 예상치 못한 성과로 이어집니다. 빠른 적응력을 살려 변화하는 상황에서 기회를 포착하세요.",
-    "닭띠": "2026년 닭띠는 준비와 실행이 완벽하게 맞아떨어지는 해입니다. 꼼꼼하게 준비해온 것들이 드디어 인정받으며 직업적으로 중요한 기회가 찾아옵니다.",
-    "개띠": "2026년 개띠는 신뢰와 의리가 큰 복이 되는 해입니다. 오래된 인연이 새로운 기회를 가져오고 진심 어린 노력이 반드시 결실로 돌아옵니다.",
-    "돼지띠": "2026년 돼지띠는 풍요롭고 기회가 많은 해입니다. 재물운이 상승하며 새로운 수익원이 생길 수 있습니다. 긍정적인 에너지를 유지하면 더 많은 기회가 자연스럽게 찾아옵니다.",
+    "쥐띠": "2026년 쥐띠는 기회가 오는 해이지만 방심하면 안 됩니다. 상반기엔 좋은 인연이 찾아오고 하반기엔 노력이 결실을 맺을 수 있어요. 단, 5~6월 사이 판단력이 흐려지는 시기가 있어 충동적인 결정을 내리면 크게 후회할 수 있습니다. 이 시기를 어떻게 넘기느냐가 올해 전체를 좌우해요.",
+    "소띠": "2026년 소띠는 노력이 빛을 발하는 해입니다. 직장에서 인정받을 기회가 오지만, 주변에 당신의 공을 가로채려는 사람이 있을 수 있어요. 믿었던 사람에게 배신당할 수 있는 기운이 있으니 인간관계를 조심해야 합니다.",
+    "호랑이띠": "2026년 호랑이띠는 에너지가 넘치지만 그만큼 부작용도 큽니다. 새로운 도전에서 성과를 낼 수 있지만, 과욕을 부리면 한 번에 무너질 수 있어요. 특히 상반기에 충동적인 투자나 사업 결정은 절대 금물입니다.",
+    "토끼띠": "2026년 토끼띠는 겉으로는 안정적으로 보이지만 내면에 불안 요소가 있습니다. 오래된 관계에서 갈등이 생기거나, 믿었던 사람이 돌아서는 상황이 생길 수 있어요. 감정적으로 힘든 시기가 반드시 옵니다.",
+    "용띠": "2026년 용띠는 큰 기회가 오는 해지만 함정도 많습니다. 하반기에 중요한 결정을 내려야 할 순간이 오는데, 이때 잘못 선택하면 3년은 고생할 수 있어요. 어떤 선택을 해야 하는지 사주로 미리 파악해두는 것이 중요합니다.",
+    "뱀띠": "2026년 뱀띠는 준비해온 것들이 드러나는 해입니다. 좋은 소식도 있지만, 건강 문제나 가족 관계에서 예상치 못한 변수가 생길 수 있어요. 특히 하반기에 심리적으로 많이 지치는 기운이 있습니다.",
+    "말띠": "2026년 말띠는 변화가 많은 해입니다. 새로운 환경이 찾아오지만 적응하는 과정에서 스트레스가 극심할 수 있어요. 이직이나 이사를 고려하고 있다면 타이밍을 잘못 잡으면 오히려 독이 됩니다.",
+    "양띠": "2026년 양띠는 창의성이 빛나는 해이지만 감정 기복이 심해집니다. 좋은 인연이 오는 동시에 오래된 상처가 다시 올라오는 시기예요. 멘탈 관리를 못 하면 좋은 기회를 스스로 날려버릴 수 있습니다.",
+    "원숭이띠": "2026년 원숭이띠는 가능성이 열리는 해지만 집중력이 흐트러지기 쉬운 시기입니다. 여러 가지를 동시에 시도하다가 아무것도 못 이루는 패턴에 빠질 수 있어요. 무엇에 집중해야 하는지가 올해의 핵심입니다.",
+    "닭띠": "2026년 닭띠는 준비가 빛을 발하는 해입니다. 하지만 완벽주의적 성향이 발목을 잡을 수 있어요. 좋은 기회가 왔을 때 망설이다가 놓치는 상황이 생길 수 있습니다. 언제 뛰어야 하는지 판단이 중요한 해입니다.",
+    "개띠": "2026년 개띠는 신뢰가 복이 되는 해이지만 그 신뢰를 악용하는 사람이 주변에 있을 수 있습니다. 오래된 인연이 기회를 가져오기도 하지만, 의리 때문에 손해를 보는 상황도 생겨요.",
+    "돼지띠": "2026년 돼지띠는 기회가 많은 해이지만 그만큼 유혹도 많습니다. 재물운이 상승하는 시기에 오히려 큰 지출이나 손실이 생길 수 있어요. 좋아 보이는 것이 함정일 수 있으니 판단력을 잃지 마세요.",
 }
 
 재물운 = {
-    "쥐띠": "2026년 쥐띠의 재물운은 꾸준한 상승세입니다. 큰 지출보다는 저축과 안정적 투자가 유리하며 상반기 예상치 못한 소득이 생길 수 있습니다.",
-    "소띠": "2026년 소띠의 재물운은 안정적입니다. 노력한 만큼 정직하게 돌아오는 재물운이며 무리한 투자보다는 본업에 집중하는 것이 더 큰 재물을 불러옵니다.",
-    "호랑이띠": "2026년 호랑이띠의 재물운은 적극적인 도전에서 열립니다. 새로운 수익 기회가 찾아오며 과감한 결정이 좋은 결과로 이어질 수 있습니다.",
-    "토끼띠": "2026년 토끼띠의 재물운은 인간관계에서 시작됩니다. 주변의 귀인이 경제적 기회를 가져오며 협력과 파트너십에서 수익이 발생할 수 있습니다.",
-    "용띠": "2026년 용띠의 재물운은 강하게 상승하는 시기입니다. 큰 투자나 사업 결정에 좋은 시기이며 장기적인 재물 계획을 세우면 좋은 결과를 얻습니다.",
-    "뱀띠": "2026년 뱀띠의 재물운은 직관을 믿는 것이 핵심입니다. 평소 관심 있던 분야에서 예상치 못한 수익 기회가 생깁니다.",
-    "말띠": "2026년 말띠의 재물운은 활발한 활동에 비례합니다. 여러 채널에서 수익이 생기는 다양한 재물운이며 하반기에 특히 좋은 재물 기운이 들어옵니다.",
-    "양띠": "2026년 양띠의 재물운은 창의적인 활동에서 열립니다. 부업이나 새로운 시도에서 예상보다 큰 수익이 생길 수 있습니다.",
-    "원숭이띠": "2026년 원숭이띠의 재물운은 아이디어에서 시작됩니다. 창의적인 접근이 수익으로 이어지며 네트워크를 잘 활용하면 더 큰 경제적 기회가 열립니다.",
-    "닭띠": "2026년 닭띠의 재물운은 꼼꼼한 관리에서 나옵니다. 지출을 체계적으로 관리하면 생각보다 많은 것이 쌓이며 상반기 예상치 못한 추가 수입이 생길 수 있습니다.",
-    "개띠": "2026년 개띠의 재물운은 신뢰에서 옵니다. 오래 쌓아온 신뢰와 관계가 경제적 기회로 연결됩니다.",
-    "돼지띠": "2026년 돼지띠의 재물운은 매우 좋습니다. 여러 방면에서 수익 기회가 생기며 긍정적인 마인드가 더 많은 재물을 불러옵니다.",
+    "쥐띠": "수입이 생기는 기운은 있지만 지출도 만만치 않은 해입니다. 돈이 들어오는 만큼 나가는 구조라 실제로 남는 게 없을 수 있어요. 특히 충동구매나 인간관계에서의 지출을 조심해야 합니다.",
+    "소띠": "재물운은 안정적이지만 느립니다. 노력 대비 결과가 늦게 나오는 구조라 중간에 포기하고 싶어질 수 있어요. 올해 무리한 투자는 절대 금물 — 한 번 실수하면 회복이 오래 걸립니다.",
+    "호랑이띠": "수익 기회는 오지만 리스크도 큽니다. 욕심을 부리면 있던 것도 잃을 수 있는 구조예요. 주변에서 투자나 사업을 권유하는 사람을 특히 조심해야 합니다.",
+    "토끼띠": "귀인이 경제적 도움을 줄 수 있지만, 그 과정에서 불필요한 지출이 생기기도 합니다. 남을 도와주다가 내 돈이 새는 상황이 생길 수 있어요.",
+    "용띠": "재물운이 강하지만 과욕이 문제입니다. 큰 기회가 왔을 때 더 큰 것을 바라다가 놓치는 패턴이 반복될 수 있어요. 적당한 선에서 멈출 줄 아는 것이 올해의 핵심입니다.",
+    "뱀띠": "예상치 못한 수익이 생기지만 예상치 못한 지출도 함께 옵니다. 특히 건강이나 가족 관련 비용이 갑자기 생길 수 있어요.",
+    "말띠": "활발하게 움직이면 수익이 생기지만 쉬는 순간 바로 막힙니다. 올해는 쉬면 안 되는 해예요 — 하지만 그 페이스를 버티지 못하면 번아웃이 옵니다.",
+    "양띠": "창의적 활동에서 수익이 생길 수 있지만 감정 상태에 따라 들쭉날쭉합니다. 멘탈이 흔들리면 재물운도 같이 흔들리는 구조예요.",
+    "원숭이띠": "아이디어는 있지만 실행력이 문제입니다. 좋은 기회를 여러 번 잡았다가 놓치는 패턴이 반복될 수 있어요. 올해 결단력이 재물운을 결정합니다.",
+    "닭띠": "꼼꼼하게 관리하면 모이지만, 예상치 못한 지출이 갑자기 발생하는 시기가 있습니다. 상반기 특히 조심해야 할 금전 손실의 기운이 있어요.",
+    "개띠": "신뢰 관계에서 수익이 생기지만 그 신뢰 때문에 손해를 보는 상황도 생깁니다. 돈 문제로 관계가 틀어지는 상황을 조심해야 해요.",
+    "돼지띠": "재물운이 좋아 보이지만 함정이 있습니다. 돈이 들어오는 시기에 오히려 큰 지출이 생기는 구조예요. 좋은 투자처럼 보이는 것에 속지 마세요.",
 }
 
 유료_항목 = [
@@ -286,6 +286,21 @@ BANK_HOLDER = os.getenv("BANK_HOLDER", "예금주명")
 ]
 
 
+위험신호 = {
+    "쥐띠": ("충동적 결정 주의", "5~6월 사이 판단력이 흐려지는 기운이 있습니다. 이 시기 중요한 결정을 내리면 후회할 확률이 높아요."),
+    "소띠": ("배신 주의", "믿었던 사람이 돌아서는 기운이 감지됩니다. 가까운 사이일수록 더 조심해야 하는 시기입니다."),
+    "호랑이띠": ("과욕 경고", "상반기에 큰 손실을 부를 수 있는 기운이 있습니다. 누군가 투자나 사업을 권유한다면 각별히 조심하세요."),
+    "토끼띠": ("관계 갈등 주의", "오래된 관계에서 갈등이 생기거나 믿었던 사람이 돌아서는 상황이 생길 수 있습니다."),
+    "용띠": ("결정의 기로", "하반기에 중요한 선택의 순간이 옵니다. 잘못 선택하면 3년은 고생할 수 있는 기운이 있어요."),
+    "뱀띠": ("건강·가족 변수", "예상치 못한 건강 문제나 가족 관련 변수가 생길 수 있습니다. 하반기 특히 조심하세요."),
+    "말띠": ("타이밍 실수 주의", "이직·이사 등 변화를 고려하고 있다면 타이밍이 핵심입니다. 잘못 움직이면 오히려 독이 됩니다."),
+    "양띠": ("멘탈 붕괴 주의", "감정 기복이 심해지는 시기입니다. 멘탈이 흔들리면 좋은 기회도 스스로 날려버릴 수 있어요."),
+    "원숭이띠": ("집중력 분산 경고", "여러 가지를 동시에 벌이다 아무것도 못 이루는 패턴에 빠질 수 있습니다. 선택과 집중이 필요합니다."),
+    "닭띠": ("기회 실기 주의", "망설이다가 좋은 기회를 놓치는 상황이 생깁니다. 언제 뛰어야 하는지 판단이 올해의 핵심이에요."),
+    "개띠": ("의리에 손해", "의리 때문에 손해를 보는 상황이 생깁니다. 돈 문제로 소중한 관계가 틀어질 수 있어요."),
+    "돼지띠": ("함정 주의", "좋아 보이는 것이 함정일 수 있습니다. 재물운이 좋은 시기에 오히려 큰 손실이 생기는 기운이 있어요."),
+}
+
 def get_띠(year):
     return 띠_맵[year % 12]
 
@@ -388,71 +403,70 @@ def create_instagram_card(name, 띠, gender, 성향, 운세, 재물):
 
 # ─── UI ───────────────────────────────────────────────────────────────────────
 
-st.set_page_config(page_title="사주포커스 | 지금 내 운을 막는 것들", page_icon="🔮", layout="centered")
+st.set_page_config(page_title="사주포커스 | 팀장님이 제 귀인이라고요?", page_icon="🔮", layout="centered")
 
 st.markdown("""
 <style>
 /* 전체 배경 */
-.stApp { background-color: #0f0f1a; }
-
-/* 기본 텍스트 */
-.stApp, .stMarkdown, label, .stRadio label { color: #e8e8f0 !important; }
+.stApp { background-color: #f5f3ff; }
 
 /* 히어로 섹션 */
 .hero {
-    background: linear-gradient(135deg, #1a0533 0%, #0d1b3e 50%, #0f0f1a 100%);
-    border: 1px solid #2d2d4e;
-    border-radius: 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #ede9fe 100%);
+    border: 1.5px solid #ddd6fe;
+    border-radius: 24px;
     padding: 48px 32px 40px;
     text-align: center;
     margin-bottom: 32px;
+    box-shadow: 0 4px 24px rgba(124,58,237,0.08);
 }
 .hero-tag {
     display: inline-block;
-    background: rgba(167, 139, 250, 0.15);
-    border: 1px solid rgba(167, 139, 250, 0.4);
-    color: #a78bfa;
+    background: #ede9fe;
+    border: 1px solid #c4b5fd;
+    color: #7c3aed;
     font-size: 0.78rem;
     letter-spacing: 0.12em;
     padding: 4px 14px;
     border-radius: 20px;
     margin-bottom: 20px;
-    font-weight: 600;
+    font-weight: 700;
 }
 .hero-title {
-    font-size: 2.6rem;
-    font-weight: 800;
-    color: #ffffff;
-    line-height: 1.2;
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #1e1e2e;
+    line-height: 1.3;
     margin: 0 0 14px;
     letter-spacing: -0.02em;
 }
-.hero-title span { color: #a78bfa; }
+.hero-title span { color: #7c3aed; }
 .hero-sub {
     font-size: 1rem;
-    color: #9090b0;
+    color: #6b6b8a;
     margin: 0 0 28px;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 .hero-badges {
     display: flex;
     justify-content: center;
-    gap: 12px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 .badge {
-    background: rgba(255,255,255,0.05);
-    border: 1px solid rgba(255,255,255,0.1);
+    background: #ffffff;
+    border: 1.5px solid #ddd6fe;
     border-radius: 30px;
     padding: 6px 16px;
     font-size: 0.82rem;
-    color: #c0c0d8;
+    color: #7c3aed;
+    font-weight: 600;
 }
 
 /* 폼 카드 */
 .form-card {
-    background: #16162a;
-    border: 1px solid #2a2a45;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
     border-radius: 16px;
     padding: 28px 24px;
     margin-bottom: 8px;
@@ -460,7 +474,7 @@ st.markdown("""
 .form-title {
     font-size: 0.85rem;
     font-weight: 700;
-    color: #a78bfa;
+    color: #7c3aed;
     letter-spacing: 0.08em;
     margin-bottom: 18px;
     text-transform: uppercase;
@@ -475,42 +489,25 @@ st.markdown("""
     font-weight: 700 !important;
     font-size: 1rem !important;
     padding: 14px !important;
-    letter-spacing: 0.02em !important;
     transition: opacity 0.2s !important;
 }
 .stButton > button:hover, .stFormSubmitButton > button:hover {
     opacity: 0.88 !important;
 }
 
-/* 입력 필드 */
-.stTextInput input, .stNumberInput input, .stSelectbox select {
-    background: #0f0f1a !important;
-    border: 1px solid #2a2a45 !important;
-    border-radius: 10px !important;
-    color: #e8e8f0 !important;
-}
-
 /* 구분선 */
-hr { border-color: #2a2a45 !important; }
-
-/* expander */
-.streamlit-expanderHeader {
-    background: #16162a !important;
-    border: 1px solid #2a2a45 !important;
-    border-radius: 10px !important;
-    color: #e8e8f0 !important;
-}
+hr { border-color: #e5e7eb !important; }
 
 /* 결과 배너 */
 .result-banner {
-    background: linear-gradient(135deg, #1a0533, #0d1b3e);
-    border: 1px solid #3d2d6e;
+    background: linear-gradient(135deg, #ede9fe, #e0e7ff);
+    border: 1.5px solid #c4b5fd;
     border-radius: 16px;
     padding: 24px 28px;
     margin: 16px 0 24px;
 }
-.result-banner h2 { color: #ffffff; margin: 0 0 6px; font-size: 1.8rem; }
-.result-banner p { color: #9090b0; margin: 0; font-size: 0.88rem; }
+.result-banner h2 { color: #1e1e2e; margin: 0 0 6px; font-size: 1.8rem; }
+.result-banner p { color: #6b6b8a; margin: 0; font-size: 0.88rem; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -518,8 +515,8 @@ hr { border-color: #2a2a45 !important; }
 st.markdown("""
 <div class="hero">
     <div class="hero-tag">✦ SAJUFOCUS · 사주포커스 ✦</div>
-    <h1 class="hero-title">지금 내 기운<br><span>새고 있지 않나요?</span></h1>
-    <p class="hero-sub">사주가 말하는 내 운의 구멍 —<br>알면 막을 수 있고, 모르면 계속 샙니다</p>
+    <h1 class="hero-title">"팀장님이 제 귀인이라고요?<br><span>제 퇴사 사유인데요?"</span></h1>
+    <p class="hero-sub">억울하면 사주나 봐봐 — 진짜 이유 알려줌 😤<br>내 인생이 왜 이런지, 사주가 다 설명해줌</p>
     <div class="hero-badges">
         <span class="badge">🔮 기본 운세 무료</span>
         <span class="badge">🛡️ 차단법 990원</span>
@@ -531,7 +528,7 @@ st.markdown("""
 # 990원 차단법 배너
 st.markdown("""
 <div style="
-    background: linear-gradient(135deg, #2d1b4e 0%, #1a1040 100%);
+    background: linear-gradient(135deg, #ede9fe 0%, #e0e7ff 100%);
     border: 1.5px solid #7c3aed;
     border-radius: 16px;
     padding: 24px 28px;
@@ -542,9 +539,9 @@ st.markdown("""
 ">
     <div style="font-size:2.2rem;">🛡️</div>
     <div style="flex:1;">
-        <div style="color:#a78bfa; font-size:0.78rem; font-weight:700; letter-spacing:0.1em; margin-bottom:4px;">지금 가장 많이 찾는 서비스</div>
-        <div style="color:#ffffff; font-size:1.15rem; font-weight:800; margin-bottom:4px;">나쁜 기운 차단법 — <span style="color:#a78bfa;">990원</span></div>
-        <div style="color:#9090b0; font-size:0.85rem;">내 사주에서 지금 나를 막고 있는 것 + 막는 방법을 DM으로 알려드립니다<br>
+        <div style="color:#7c3aed; font-size:0.78rem; font-weight:700; letter-spacing:0.1em; margin-bottom:4px;">지금 가장 많이 찾는 서비스</div>
+        <div style="color:#1e1e2e; font-size:1.15rem; font-weight:800; margin-bottom:4px;">나쁜 기운 차단법 — <span style="color:#7c3aed;">990원</span></div>
+        <div style="color:#6b6b8a; font-size:0.85rem;">내 사주에서 지금 나를 막고 있는 것 + 막는 방법을 DM으로 알려드립니다<br>
         <span style="color:#7c3aed; font-weight:600;">✓ 월구독 시 매달 업데이트 포함</span></div>
     </div>
 </div>
@@ -609,6 +606,26 @@ if submitted:
     with st.expander("💰 간단 재물운", expanded=True):
         st.write(재물)
 
+    # ── 위험신호 ───────────────────────────────────────────────────────────────
+    신호_제목, 신호_내용 = 위험신호[띠]
+    st.markdown(f"""
+<div style="
+    background: #fff7ed;
+    border: 1.5px solid #f97316;
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin: 20px 0;
+">
+    <div style="color:#ea580c; font-weight:800; font-size:1rem; margin-bottom:8px;">
+        ⚠️ 올해 {name}님 사주에서 발견된 위험신호
+    </div>
+    <div style="color:#9a3412; font-weight:700; margin-bottom:6px;">🔴 {신호_제목}</div>
+    <div style="color:#7c2d12; font-size:0.92rem; line-height:1.6;">{신호_내용}</div>
+    <div style="margin-top:12px; color:#ea580c; font-size:0.85rem; font-weight:600;">
+        👇 이 위험을 어떻게 피해야 하는지, 정확한 시기와 대처법은 유료 분석에서 알려드립니다
+    </div>
+</div>
+""", unsafe_allow_html=True)
 
     st.divider()
 
